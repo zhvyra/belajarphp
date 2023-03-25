@@ -33,6 +33,14 @@
                     </select>
                 </td>
             </tr>
+            <tr>
+                <td>
+                <label>Masukan Jumlah Anak</label>
+                </td>
+                <td>
+                    <input type="number" max="5" name="anak">
+                </td>
+            </tr>
             </tr>
             <td>
                 <label>Jabatan</label>
@@ -54,8 +62,8 @@
             <td>
                 <select name="agama" required>
                     <option>--Agama--</option>
-                    <option value="manager">Islam</option>
-                    <option value="asisten">Kristen</option>
+                    <option value="islam">Islam</option>
+                    <option value="lainnya">lainnya</option>
                 </select>
             </td>
             </tr>
@@ -77,10 +85,11 @@
         $agama = $_POST["agama"];
 
 
+
         $gaji_pokok = 0;
         $tunjangan_jabatan = 0;
         $tunjangan_keluarga = 0;
-        $jumlah_anak = 3;
+        $jumlah_anak = $_POST["anak"];
         $gaji_kotor = 0;
         $zakat_profesi = 0;
         $take_home_pay = 0;
