@@ -24,19 +24,19 @@ class Pegawai
         $this->jabatan = $jabatan;
         switch ($jabatan) {
             case 'Direktur':
-                $gapok = 15000000;
+                $gapok = 25000000;
                 break;
             case 'Manager':
-                $gapok = 10000000;
+                $gapok = 18000000;
                 break;
             case 'Asisten Manager':
-                $gapok = 7000000;
+                $gapok = 13000000;
                 break;
             case 'Kepala Bagian':
-                $gapok = 5000000;
+                $gapok = 9000000;
                 break;
             case 'Staff':
-                $gapok = 5000000;
+                $gapok = 4500000;
                 break;
             default:
                 $gapok = 0;
@@ -82,10 +82,10 @@ class Pegawai
 }
 
 $pegawai = new Pegawai(0110220121, "Pipipiw", "Direktur", "Islam", "Menikah");
-$pegawai2 = new Pegawai(0110220122, "John", "Manager", "Bukan Islam", "Belum Menikah");
-$pegawai3 = new Pegawai(0110220123, "Mayer", "Asisten Manager", "Islam", "Menikah");
-$pegawai4 = new Pegawai(0110220124, "Mayer", "Kepala Bagian", "Islam", "Menikah");
-$pegawai5 = new Pegawai(0110220125, "Mayer", "Staff", "Islam", "Belum Menikah");
+$pegawai2 = new Pegawai(0110220122, "Popopow", "Manager", "Bukan Islam", "Belum Menikah");
+$pegawai3 = new Pegawai(0110220123, "Papapaw", "Asisten Manager", "Islam", "Menikah");
+$pegawai4 = new Pegawai(0110220124, "Pipopow", "Kepala Bagian", "Islam", "Menikah");
+$pegawai5 = new Pegawai(0110220125, "Pupupuw", "Staff", "Islam", "Belum Menikah");
 
 echo $pegawai->cetak();
 echo $pegawai2->cetak();
